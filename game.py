@@ -2,11 +2,16 @@
 
 import random
 
+#trying to use .env on name:
+#import os
+#from dotenv import load_dotenv
+#PLAYER_NAME = os.getenv("USER_NAME", default="Player One")
+
 print("-------------------")
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print("Welcome to my Rock-Paper-Scissors game...")
 print("-------------------")
 
-player_choice = input("Please choose eith: 'rock', 'paper', 'scissors': ")
+player_choice = input("Please choose either: 'rock', 'paper', 'scissors': ")
 
 print("You chose:", player_choice)
 
