@@ -1,5 +1,7 @@
 # game.py
 
+import random
+
 print("Rock, Paper, Scissors, Shoot!")
 
 player_choice = input("Please choose one of 'rock', 'paper', 'scissors': ")
@@ -12,9 +14,14 @@ print("The player chose:", player_choice)
 #...and we'll ask the user to run the program again
 
 if (player_choice =="rock") or (player_choice =="paper") or (player_choice =="scissors"):
-    print("Valid. Keep Going")
+    print("Valid. Keep Going!")
 else: 
     print("OOPS, Invalid input. Please try again.")
     exit()
+
+
+valid_options = ["rock","paper","scissors"]
+computer_choice = random.choice(valid_options)
+print("The computer chose:", computer_choice)
 
 print("This is the end of our game. Please play again.")
