@@ -4,7 +4,7 @@ import random
 
 #trying to use .env on name:
 #import os
-#from dotenv import load_dotenv
+#from .env import load_dotenv
 #PLAYER_NAME = os.getenv("USER_NAME", default="Player One")
 
 print("-------------------")
@@ -59,4 +59,4 @@ if (computer_choice =="paper") and (player_choice == "paper"):
 
 print("-------------------")
 
-print("Thanks for playing. Please play again.")
+print("Thanks for playing! Please play again.")
