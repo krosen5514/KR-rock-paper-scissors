@@ -36,22 +36,27 @@ print("The computer chose:", computer_choice)
 #Scissors beats Paper
 #Rock vs Rock, Paper vs Paper, and Scissors vs Scissors each results in a "tie"
 print("-------------------")
-if (player_choice =="rock") and (computer_choice == "scissors"):
-    #print("Computer Wins")
-if (player_choice =="scissors") and (computer_choice == "rock"):
-    #print("Computer Wins")
-if (player_choice =="rock") and (computer_choice == "paper"):
-    #print("Computer Wins")
-
-if (computer_choice =="rock") and (player_choice == "scissors"):
-    print("You Win!")
-if (computer_choice =="scissors") and (player_choice == "rock"):
-    print("You Win!")
-if (computer_choice =="rock") and (player_choice == "paper"):
-    print("You Win!")
-
-if (computer_choice == player_choice):
-    print("It's a tie")
+if player_choice == "rock":
+    if computer_choice == "rock":
+        print("IT'S A TIE")
+    elif computer_choice == "paper":
+        print("Sorry, you lost this round...")
+    elif computer_choice == "scissors":
+        print("YOU WON, nice job!")
+elif player_choice == "paper":
+    if computer_choice == "rock":
+        print("YOU WON, nice job! CONGRATS!")
+    elif computer_choice == "paper":
+        print("IT'S A TIE")
+    elif computer_choice == "scissors":
+        print("Sorry, you lost this round...")
+elif player_choice == "scissors":
+    if computer_choice == "rock":
+        print("Sorry, you lost this round...")
+    elif computer_choice == "paper":
+        print("YOU WON, nice job!")
+    elif computer_choice == "scissors":
+        print("IT'S A TIE")
 
 print("-------------------")
 
